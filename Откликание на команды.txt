@@ -1,0 +1,3 @@
+@bot.message_handler(commands=['start'])     <==== Там где Старт вводишь любую команду которая будет вызываться пользоваталем через /
+def main(message):
+    bot.send_message(message.chat.id, f'Привет, {message.from_user.first_name}')

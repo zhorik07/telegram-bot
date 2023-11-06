@@ -1,0 +1,3 @@
+@bot.message_handler(content_types=['photo'])
+def get_photo(message):
+    bot.reply_to(message, 'Нифига се какое фото красивое)', reply_markup=markup)  <==== в данном случает он отвечает на фото, но если что просто меняй тайп на сообщение
